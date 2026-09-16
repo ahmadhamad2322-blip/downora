@@ -1,0 +1,8 @@
+services:
+  downora:
+    build: .
+    ports: ["8080:8080"]
+    environment:
+      DOWNORA_ADMIN_PASSWORD: "CHANGE_ME"
+      DOWNORA_SESSION_SECRET: "CHANGE_ME_RANDOM"
+      DOWNORA_MAX_MB: "500"
